@@ -42,9 +42,7 @@
      <Compile Include="Assets\Scripts\Ads\ADInitializer.cs" />
      <Compile Include="Assets\Scripts\ECS\Systems\PlayerBattleStateSystem.cs" />
      <Compile Include="Assets\Scripts\Mbehs\Finish.cs" />
-     <Compile Include="Assets\Scripts\Ads\RewardedAD.cs" />
      <Compile Include="Assets\Scripts\Data\StaticData.cs" />
-     <Compile Include="Assets\Scripts\Mbehs\EnemyData.cs" />
      <Compile Include="Assets\Scripts\ECS\Systems\PlayerIdleStateSystem.cs" />
      <Compile Include="Assets\Scripts\ECS\Components.cs" />
      <Compile Include="Assets\Scripts\Mbehs\DrawGizmo.cs" />
@@ -52,8 +50,9 @@
      <Compile Include="Assets\Scripts\Mbehs\Projectile.cs" />
      <Compile Include="Assets\Scripts\Ads\InterstitialAD.cs" />
      <Compile Include="Assets\Scripts\Data\PlayerData.cs" />
-     <Compile Include="Assets\Scripts\ECS\Systems\GameInitSystem.cs" />
      <Compile Include="Assets\Scripts\Extensions.cs" />
+     <Compile Include="Assets\Scripts\ECS\Systems\GameInitSystem.cs" />
+     <Compile Include="Assets\Scripts\Data\EnemyData.cs" />
      <None Include="Assets\parts\Assets\Shaders\GradientBackgroundShader.shader" />
     <Reference Include="UnityEngine">
         <HintPath>D:\UnityHub\2020.3.19f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
@@ -269,7 +268,7 @@
         <HintPath>D:\UnityHub\2020.3.19f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-        <HintPath>D:\UnityHub\Games\project\Hit game task\Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
+        <HintPath>D:\UnityHub\Games\Hit game task\Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
         <HintPath>D:\UnityHub\2020.3.19f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>
@@ -617,91 +616,91 @@
         <HintPath>D:\UnityHub\2020.3.19f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-        <HintPath>D:\UnityHub\Games\project\Hit game task\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
+        <HintPath>D:\UnityHub\Games\Hit game task\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Shaders">
-        <HintPath>D:\UnityHub\Games\project\Hit game task\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
+        <HintPath>D:\UnityHub\Games\Hit game task\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Runtime">
-        <HintPath>D:\UnityHub\Games\project\Hit game task\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+        <HintPath>D:\UnityHub\Games\Hit game task\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Leopotam.Ecs.UnityIntegration">
-        <HintPath>D:\UnityHub\Games\project\Hit game task\Library\ScriptAssemblies\Leopotam.Ecs.UnityIntegration.dll</HintPath>
+        <HintPath>D:\UnityHub\Games\Hit game task\Library\ScriptAssemblies\Leopotam.Ecs.UnityIntegration.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-        <HintPath>D:\UnityHub\Games\project\Hit game task\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
+        <HintPath>D:\UnityHub\Games\Hit game task\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
-        <HintPath>D:\UnityHub\Games\project\Hit game task\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
+        <HintPath>D:\UnityHub\Games\Hit game task\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-        <HintPath>D:\UnityHub\Games\project\Hit game task\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
+        <HintPath>D:\UnityHub\Games\Hit game task\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Leopotam.Ecs.UnityIntegration.Editor">
-        <HintPath>D:\UnityHub\Games\project\Hit game task\Library\ScriptAssemblies\Leopotam.Ecs.UnityIntegration.Editor.dll</HintPath>
+        <HintPath>D:\UnityHub\Games\Hit game task\Library\ScriptAssemblies\Leopotam.Ecs.UnityIntegration.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-        <HintPath>D:\UnityHub\Games\project\Hit game task\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+        <HintPath>D:\UnityHub\Games\Hit game task\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Searcher.Editor">
-        <HintPath>D:\UnityHub\Games\project\Hit game task\Library\ScriptAssemblies\Unity.Searcher.Editor.dll</HintPath>
+        <HintPath>D:\UnityHub\Games\Hit game task\Library\ScriptAssemblies\Unity.Searcher.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Advertisements">
-        <HintPath>D:\UnityHub\Games\project\Hit game task\Library\ScriptAssemblies\UnityEngine.Advertisements.dll</HintPath>
+        <HintPath>D:\UnityHub\Games\Hit game task\Library\ScriptAssemblies\UnityEngine.Advertisements.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Runtime">
-        <HintPath>D:\UnityHub\Games\project\Hit game task\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+        <HintPath>D:\UnityHub\Games\Hit game task\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-        <HintPath>D:\UnityHub\Games\project\Hit game task\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+        <HintPath>D:\UnityHub\Games\Hit game task\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PlasticSCM.Editor">
-        <HintPath>D:\UnityHub\Games\project\Hit game task\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
+        <HintPath>D:\UnityHub\Games\Hit game task\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-        <HintPath>D:\UnityHub\Games\project\Hit game task\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
+        <HintPath>D:\UnityHub\Games\Hit game task\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
-        <HintPath>D:\UnityHub\Games\project\Hit game task\Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+        <HintPath>D:\UnityHub\Games\Hit game task\Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-        <HintPath>D:\UnityHub\Games\project\Hit game task\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+        <HintPath>D:\UnityHub\Games\Hit game task\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mathematics">
-        <HintPath>D:\UnityHub\Games\project\Hit game task\Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
+        <HintPath>D:\UnityHub\Games\Hit game task\Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ShaderGraph.Editor">
-        <HintPath>D:\UnityHub\Games\project\Hit game task\Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll</HintPath>
+        <HintPath>D:\UnityHub\Games\Hit game task\Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Cinemachine">
-        <HintPath>D:\UnityHub\Games\project\Hit game task\Library\ScriptAssemblies\Cinemachine.dll</HintPath>
+        <HintPath>D:\UnityHub\Games\Hit game task\Library\ScriptAssemblies\Cinemachine.dll</HintPath>
     </Reference>
     <Reference Include="com.unity.cinemachine.editor">
-        <HintPath>D:\UnityHub\Games\project\Hit game task\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll</HintPath>
+        <HintPath>D:\UnityHub\Games\Hit game task\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll</HintPath>
     </Reference>
     <Reference Include="Leopotam.Ecs">
-        <HintPath>D:\UnityHub\Games\project\Hit game task\Library\ScriptAssemblies\Leopotam.Ecs.dll</HintPath>
+        <HintPath>D:\UnityHub\Games\Hit game task\Library\ScriptAssemblies\Leopotam.Ecs.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Editor">
-        <HintPath>D:\UnityHub\Games\project\Hit game task\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll</HintPath>
+        <HintPath>D:\UnityHub\Games\Hit game task\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
-        <HintPath>D:\UnityHub\Games\project\Hit game task\Library\ScriptAssemblies\Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
+        <HintPath>D:\UnityHub\Games\Hit game task\Library\ScriptAssemblies\Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
-        <HintPath>D:\UnityHub\Games\project\Hit game task\Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+        <HintPath>D:\UnityHub\Games\Hit game task\Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-        <HintPath>D:\UnityHub\Games\project\Hit game task\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
+        <HintPath>D:\UnityHub\Games\Hit game task\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mathematics.Editor">
-        <HintPath>D:\UnityHub\Games\project\Hit game task\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
+        <HintPath>D:\UnityHub\Games\Hit game task\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Advertisements.Editor">
-        <HintPath>D:\UnityHub\Games\project\Hit game task\Library\ScriptAssemblies\UnityEngine.Advertisements.Editor.dll</HintPath>
+        <HintPath>D:\UnityHub\Games\Hit game task\Library\ScriptAssemblies\UnityEngine.Advertisements.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Editor">
-        <HintPath>D:\UnityHub\Games\project\Hit game task\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll</HintPath>
+        <HintPath>D:\UnityHub\Games\Hit game task\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

@@ -16,6 +16,8 @@ sealed class PlayerIdleStateSystem : IEcsRunSystem
 
             playerEntity.Del<PlayerIdleState>();
             playerEntity.Get<PlayerRunState>();
+
+            SceneData.singleton.HideCanvasText();
         }
     }
 }

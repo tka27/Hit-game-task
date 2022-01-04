@@ -8,10 +8,16 @@ public class SceneData : MonoBehaviour
     public List<Transform> waypoints;
     public List<EnemyData> enemies;
     public ParticleSystem hitParticles;
+    [SerializeField] GameObject canvasText;
 
 
     private void Awake()
     {
         singleton = this;
+    }
+
+    public void HideCanvasText()
+    {
+        canvasText.SetActive(false);
     }
 }

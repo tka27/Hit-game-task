@@ -7,7 +7,6 @@ sealed class PlayerBattleStateSystem : IEcsRunSystem, IEcsInitSystem, IEcsDestro
     LayerMask layer;
     Camera camera;
     EcsFilter<Player, PlayerBattleState> battlePlayerFilter;
-    //EcsFilter<Player> playerFilter;
     EcsFilter<Enemy> enemyFilter;
     const int ENEMY_SCAN_RADIUS = 10;
 
@@ -51,7 +50,6 @@ sealed class PlayerBattleStateSystem : IEcsRunSystem, IEcsInitSystem, IEcsDestro
 
     bool EnemiesIsDead()
     {
-        Debug.Log("kill check");
         ref var player = ref battlePlayerFilter.Get1(0);
 
         foreach (var enemyEntityIndex in enemyFilter)
@@ -61,8 +59,6 @@ sealed class PlayerBattleStateSystem : IEcsRunSystem, IEcsInitSystem, IEcsDestro
 
             if (enemy.enemyData.isAlive && distanceToEnemy < ENEMY_SCAN_RADIUS)
             {
-                Debug.Log("false");
-                //enemyFilter.GetEntity(enemyEntityIndex).Del<Enemy>();
                 return false;
             }
         }
